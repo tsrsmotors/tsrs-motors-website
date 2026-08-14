@@ -1,361 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TSRS Motors — আপনার বাইকের জন্য সেরা যত্ন</title>
+  <meta name="description" content="TSRS Motors — Engine, Wiring, FI, Brake, Tire, Suspension এবং Full Servicing. পেশাদার মোটরসাইকেল সার্ভিস, গাজীপুর।">
+  <meta name="keywords" content="TSRS Motors, Motorcycle Service, Bike Repair, Engine Service, Wiring, FI Diagnosis, Gazipur">
+  <link rel="canonical" href="https://tsrsmotors.github.io/tsrs-motors-website/">
 
-  <title>TSRS Motors | Professional Motorcycle Care</title>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TSRS Motors — আপনার বাইকের জন্য সেরা যত্ন">
+  <meta property="og:description" content="Engine, Wiring, FI, Brake, Tire, Suspension এবং Full Servicing — পেশাদার মোটরসাইকেল সার্ভিস।">
+  <meta property="og:url" content="https://tsrsmotors.github.io/tsrs-motors-website/">
+  <meta property="og:image" content="https://tsrsmotors.github.io/tsrs-motors-website/assets/logo/og-image.png">
 
-  <meta name="description"
-        content="TSRS Motors - Professional Motorcycle Service, Engine, Wiring, Brake, Tire, FI, Suspension এবং Full Servicing.">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TSRS Motors — আপনার বাইকের জন্য সেরা যত্ন">
+  <meta name="twitter:description" content="Engine, Wiring, FI, Brake, Tire, Suspension এবং Full Servicing">
+  <meta name="twitter:image" content="https://tsrsmotors.github.io/tsrs-motors-website/assets/logo/og-image.png">
 
-  <meta name="keywords"
-        content="TSRS Motors, Motorcycle Service, Bike Repair, Engine Service, Bike Wiring, FI Diagnosis, Bike Servicing, Gazipur">
+  <link rel="icon" href="/assets/logo/favicon.svg" type="image/svg+xml">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="/style.css?v=202608141945" as="style">
+  <link rel="stylesheet" href="/style.css?v=202608141945">
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+  <script defer src="/script.js?v=202608141945"></script>
 
-  <!-- versioned stylesheet to bust cache -->
-  <link rel="stylesheet"
-        href="style.css?v=202608141945">
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "TSRS Motors",
+    "telephone": "+8801911200577",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "আবুল মার্কেট, ফুলবাড়িয়া টু হোতাপাড়া রোড",
+      "addressLocality": "ফুলবাড়িয়া, কালিয়াকৈর",
+      "addressRegion": "গাজীপুর",
+      "addressCountry": "BD"
+    },
+    "url": "https://tsrsmotors.github.io/tsrs-motors-website/"
+  }
+  </script>
+
 </head>
-
 <body>
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a class="logo" href="#home"><img src="/assets/logo/logo.svg" alt="TSRS Motors logo" class="logo-img"> <span>TSRS MOTORS</span></a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <nav id="navMenu" class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#process">How We Work</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-btn" href="tel:+8801911200577">Call Now</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- ================= NAVBAR ================= -->
-
-<header class="navbar">
-
-  <div class="container nav-container">
-
-    <a href="#home" class="logo">
-      <span class="logo-tsrs">TSRS</span>
-      <span class="logo-motors">MOTORS</span>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle">
-      ☰
-    </button>
-
-    <nav id="navMenu">
-
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#process">How We Work</a>
-      <a href="#contact">Contact</a>
-
-      <a href="tel:+8801911200577" class="nav-btn">
-        Call Now
-      </a>
-
-    </nav>
-
-  </div>
-
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-  <div class="hero-overlay"></div>
-
-  <div class="container hero-content">
-
-    <div class="hero-text">
-
-      <span class="hero-badge">
-        🏍️ PROFESSIONAL MOTORCYCLE CARE
-      </span>
-
-      <h1>
-        আপনার বাইকের জন্য
-        <span>সেরা যত্ন।</span>
-      </h1>
-
-      <p>
-        Engine, Wiring, FI, Brake, Tire, Suspension
-        এবং Full Servicing — আপনার বাইকের প্রয়োজনীয়
-        যত্ন ও মেরামতের নির্ভরযোগ্য ঠিকানা।
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#services" class="btn primary-btn">
-          আমাদের সার্ভিস →
-        </a>
-
-        <a href="tel:+8801911200577" class="btn outline-btn">
-          📞 যোগাযোগ করুন
-        </a>
-
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="brand">TSRS MOTORS</div>
+          <h1>আপনার বাইকের জন্য<br><span>সেরা যত্ন।</span></h1>
+          <p class="sub">Engine, Wiring, FI, Brake, Tire, Suspension এবং Full Servicing — আপনার বাইকের প্রয়োজনীয় যত্ন ও মেরামতের নির্ভরযোগ্য ঠিকানা।</p>
+          <div class="hero-ctas">
+            <a href="#services" class="btn primary">আমাদের সার্ভিস</a>
+            <a href="tel:+8801911200577" class="btn outline">Call Now</a>
+            <a class="btn whatsapp" href="https://wa.me/8801911200577" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <picture>
+            <source srcset="/assets/images/hero-bike-800.svg" media="(max-width:800px)">
+            <img src="/assets/images/hero-bike-1200.svg" alt="TSRS Motors motorcycle service" loading="lazy">
+          </picture>
+        </div>
       </div>
+    </section>
 
-      <div class="hero-stats">
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>আমাদের সার্ভিস</h2>
+          <p>আমরা নিম্নলিখিত পেশাদার সার্ভিস প্রদান করি — আপনার বাইকের সব প্রয়োজন এখানে মেটানো হবে।</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <img src="/assets/images/engine.svg" alt="Engine Service" loading="lazy">
+            <h3>Engine Service</h3>
+            <p>ইঞ্জিন রিপেয়ার, টিউনিং, অয়েল সার্ভিস ও ওভারহল</p>
+          </article>
 
+          <article class="service-card">
+            <img src="/assets/images/wiring.svg" alt="Electrical & Wiring" loading="lazy">
+            <h3>Electrical & Wiring</h3>
+            <p>সম্পূর্ণ ওয়ারিং চেক, ব্যাটারি, হেডলাইট ও ইলেকট্রিক্যাল সার্ভিস</p>
+          </article>
+
+          <article class="service-card">
+            <img src="/assets/images/fi.svg" alt="FI Diagnosis" loading="lazy">
+            <h3>FI Diagnosis & ECU</h3>
+            <p>FI ডায়াগনোসিস, ECU স্ক্যানিং ও কনফিগারেশন</p>
+          </article>
+
+          <article class="service-card">
+            <img src="/assets/images/brake.svg" alt="Brake & Tire" loading="lazy">
+            <h3>Brake & Tire</h3>
+            <p>ব্রেক সার্ভিস, টায়ার পরিবর্তন ও অ্যালাইনমেন্ট</p>
+          </article>
+
+          <article class="service-card">
+            <img src="/assets/images/suspension.svg" alt="Suspension" loading="lazy">
+            <h3>Suspension & Chain</h3>
+            <p>শক সার্ভিস, চেইন লুব্রিকেশন ও স্প্রকেট পরিবর্তন</p>
+          </article>
+
+          <article class="service-card">
+            <img src="/assets/images/detailing.svg" alt="Outlook & Body Work" loading="lazy">
+            <h3>Outlook & Body Work</h3>
+            <p>পেইন্টিং, স্টিকার, পলিশিং ও আউটলুক ডিটেইলিং</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Gallery</h2>
+          <p>আমাদের কাজের নমুনা — ইঞ্জিন, ওয়্যারিং, ব্রেক, সার্ভিসিং, সাসপেনশন ও আউটলুক ওয়ার্ক।</p>
+        </div>
+        <div class="gallery-filters" role="tablist">
+          <button data-filter="*" class="active">All</button>
+          <button data-filter="engine">Engine</button>
+          <button data-filter="wiring">Wiring</button>
+          <button data-filter="brake">Brake & Tire</button>
+          <button data-filter="service">Servicing</button>
+          <button data-filter="suspension">Suspension</button>
+          <button data-filter="outlook">Outlook Work</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Local images (SVG placeholders/optimized) -->
+          <button class="gallery-item" data-category="engine" data-src="/assets/images/gallery-engine-1.svg"><img src="/assets/images/gallery-engine-1.svg" alt="Engine work 1" loading="lazy"></button>
+          <button class="gallery-item" data-category="wiring" data-src="/assets/images/gallery-wiring-1.svg"><img src="/assets/images/gallery-wiring-1.svg" alt="Wiring work 1" loading="lazy"></button>
+          <button class="gallery-item" data-category="brake" data-src="/assets/images/gallery-brake-1.svg"><img src="/assets/images/gallery-brake-1.svg" alt="Brake work 1" loading="lazy"></button>
+          <button class="gallery-item" data-category="service" data-src="/assets/images/gallery-service-1.svg"><img src="/assets/images/gallery-service-1.svg" alt="Service work 1" loading="lazy"></button>
+          <button class="gallery-item" data-category="suspension" data-src="/assets/images/gallery-suspension-1.svg"><img src="/assets/images/gallery-suspension-1.svg" alt="Suspension work 1" loading="lazy"></button>
+          <button class="gallery-item" data-category="outlook" data-src="/assets/images/gallery-outlook-1.svg"><img src="/assets/images/gallery-outlook-1.svg" alt="Outlook work 1" loading="lazy"></button>
+        </div>
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button class="lightbox-close" aria-label="Close">×</button>
+          <img src="" alt="" id="lightboxImage">
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section id="process" class="section process">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How We <em>Work</em></h2>
+          <p>দ্রুত, পরিষ্কার ও বিশ্বাসযোগ্য সার্ভিস — আমাদের কাজের ধাপগুলো:</p>
+        </div>
+        <div class="timeline">
+          <div class="step">
+            <div class="step-index">01</div>
+            <div class="step-body"><h3>Booking</h3><p>কল অথবা WhatsApp-এ অ্যাপয়েন্টমেন্ট নিন।</p></div>
+          </div>
+          <div class="step">
+            <div class="step-index">02</div>
+            <div class="step-body"><h3>Checkup</h3><p>প্রফেশনাল টেকনিশিয়ান সম্পূর্ণ চেকআপ করবেন।</p></div>
+          </div>
+          <div class="step">
+            <div class="step-index">03</div>
+            <div class="step-body"><h3>Repair/Service</h3><p>মালিকের অনুমোদনে দ্রুত ও পরিচ্ছন্নভাবে কাজ করা হবে।</p></div>
+          </div>
+          <div class="step">
+            <div class="step-index">04</div>
+            <div class="step-body"><h3>Delivery</h3><p>কাজ শেষে নিরাপদ হস্তান্তর ও পরামর্শ প্রদান করা হবে।</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
         <div>
-          <strong>100%</strong>
-          <small>Professional Care</small>
+          <h2>নিজের বাইকের মতো যত্ন।</h2>
+          <p>TSRS Motors এ আমরা পেশাদার সার্ভিস, সাবধানী কাজ এবং ইঞ্জিন ও ওয়্যারিং-এর দক্ষতায় বিশ্বাসী। নিয়মিত মেইনটেন্যান্স ও সতর্ক পরামর্শ দিয়ে আমরা আপনাদের বাইককে স্থায়ীভাবে ভালো রাখতে চাই।</p>
+          <ul>
+            <li>Professional service</li>
+            <li>Careful workmanship</li>
+            <li>Engine & wiring expertise</li>
+            <li>Regular maintenance</li>
+            <li>Customer satisfaction</li>
+          </ul>
+        </div>
+        <div class="about-media"><img src="/assets/images/about-team.svg" alt="TSRS Motors team" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- BOOKING / CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>Contact Us</h3>
+          <p>টি এস আর এস মটরস<br>আবুল মার্কেট, ফুলবাড়িয়া টু হোতাপাড়া রোড, ফুলবাড়িয়া, কালিয়াকৈর, গাজীপুর</p>
+          <p><strong>Phone:</strong> <a href="tel:+8801911200577">+8801911200577</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/8801911200577" target="_blank">Chat on WhatsApp</a></p>
+          <p>
+            <a class="btn primary" href="tel:+8801911200577">Call</a>
+            <a class="btn whatsapp" href="https://wa.me/8801911200577?text=Hello%20TSRS%20Motors" target="_blank">WhatsApp</a>
+            <a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=TSRS+Motors+Gazipur" target="_blank">Google Maps</a>
+          </p>
         </div>
 
-        <div>
-          <strong>Expert</strong>
-          <small>Technical Service</small>
+        <div class="booking-card">
+          <h3>Book a Service</h3>
+          <form id="bookingForm">
+            <label>Full name<input name="name" required></label>
+            <label>Phone number<input name="phone" required></label>
+            <label>Service<select name="service" required>
+              <option value="Engine Service">Engine Service</option>
+              <option value="Electrical & Wiring">Electrical & Wiring</option>
+              <option value="FI Diagnosis & ECU">FI Diagnosis & ECU</option>
+              <option value="Brake & Tire">Brake & Tire</option>
+              <option value="Suspension & Chain">Suspension & Chain</option>
+              <option value="Outlook & Body Work">Outlook & Body Work</option>
+            </select></label>
+            <label>Preferred date<input type="date" name="date"></label>
+            <label>Describe the problem<textarea name="desc"></textarea></label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send via WhatsApp</button>
+            </div>
+          </form>
         </div>
-
-        <div>
-          <strong>TSRS</strong>
-          <small>Trusted Motorcycle Care</small>
-        </div>
-
       </div>
+    </section>
 
-    </div>
+  </main>
 
-  </div>
-
-</section>
-
-
-<!-- ================= SHOWCASE (above Services) — motorcycle images (hotlinked) ================= -->
-<section class="showcase" id="showcase-services" aria-label="Bike showcase banner">
-  <div class="container">
-    <div class="carousel" data-autoplay="true" data-interval="4200">
-      <button class="carousel-control prev" aria-label="Previous">‹</button>
-      <div class="carousel-track">
-        <!-- 8 motorcycle image slides (Unsplash hotlink) -->
-        <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?motorcycle&sig=11')" aria-hidden="false"></div>
-        <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?motorbike&sig=12')" aria-hidden="true"></div>
-        <div class="slide" data-type="image" style="background-image:url('https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&h=800&w=1400')" aria-hidden="true"></div>
-        <div class="slide" data-type="image" style="background-image:url('https://images.pexels.com/photos/1000194/pexels-photo-1000194.jpeg?auto=compress&cs=tinysrgb&h=800&w=1400')" aria-hidden="true"></div>
-        <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?riding,road&sig=13')" aria-hidden="true"></div>
-        <div class="slide" data-type="image" style="background-image:url('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&h=800&w=1400')" aria-hidden="true"></div>
-        <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?sportbike&sig=14')" aria-hidden="true"></div>
-        <div class="slide" data-type="image" style="background-image:url('https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=800&w=1400')" aria-hidden="true"></div>
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <img src="/assets/logo/logo.svg" alt="TSRS Motors logo" class="logo-img-sm">
+        <p>TSRS Motors — Professional Motorcycle Care.</p>
       </div>
-      <button class="carousel-control next" aria-label="Next">›</button>
-      <div class="carousel-indicators" role="tablist"></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ================= SERVICES (existing) ================= -->
-
-<section class="section services-section" id="services">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span>OUR SERVICES</span>
-
-      <h2>
-        আমাদের <em>সার্ভিস</em>
-      </h2>
-
-      <p>
-        আপনার বাইকের প্রয়োজনীয় গুরুত্বপূর্ণ
-        সার্ভিস ও মেরামতের জন্য TSRS Motors।
-      </p>
-
-    </div>
-
-
-    <div class="services-grid">
-
-      <!-- service cards (same as you provided) -->
-
-      <div class="service-card">
-        <div class="service-icon">🔧</div>
-        <h3>ইঞ্জিন সম্পর্কিত কাজ</h3>
-        <p>বাইকের Engine-এর প্রয়োজনীয় repair, maintenance এবং tuning।</p>
-        <ul>
-          <li>ইঞ্জিন ওভারহল</li>
-          <li>ক্লাচ প্লেট পরিবর্তন</li>
-          <li>পিস্টন ও রিং পরিবর্তন</li>
-          <li>ভালভ অ্যাডজাস্টমেন্ট</li>
-          <li>ইঞ্জিন অয়েল পরিবর্তন</li>
-          <li>টাইমিং চেইন পরিবর্তন</li>
-        </ul>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
-
-      <div class="service-card">
-        <div class="service-icon">⚡</div>
-        <h3>ইলেকট্রিক্যাল ও Wiring</h3>
-        <p>Electrical system এবং wiring-এর সমস্যা নির্ণয় ও সমাধান।</p>
-        <ul>
-          <li>সম্পূর্ণ Wiring Check</li>
-          <li>Battery পরীক্ষা</li>
-          <li>Headlight Repair</li>
-          <li>Indicator & Horn Repair</li>
-          <li>FI Diagnosis</li>
-          <li>ECU Scanning</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🛞</div>
-        <h3>Brake & Tire</h3>
-        <p>নিরাপদ riding-এর জন্য Brake ও Tire-এর প্রয়োজনীয় servicing।</p>
-        <ul>
-          <li>Brake Pad পরিবর্তন</li>
-          <li>Disc & Drum Service</li>
-          <li>Brake Fluid পরিবর্তন</li>
-          <li>Tire পরিবর্তন</li>
-          <li>Tubeless Puncture Repair</li>
-          <li>Wheel Alignment</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <h3>Suspension & Chain</h3>
-        <p>Smooth riding-এর জন্য Suspension এবং Chain maintenance।</p>
-        <ul>
-          <li>Shock Absorber Service</li>
-          <li>Chain Tightening</li>
-          <li>Chain Lubrication</li>
-          <li>Sprocket পরিবর্তন</li>
-          <li>Suspension Check</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🧼</div>
-        <h3>General Servicing</h3>
-        <p>বাইকের complete servicing ও regular maintenance।</p>
-        <ul>
-          <li>Full Body Wash</li>
-          <li>Engine Tuning</li>
-          <li>Air Filter Cleaning</li>
-          <li>Spark Plug পরিবর্তন</li>
-          <li>Complete Bike Checkup</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🎨</div>
-        <h3>Outlook & Body Work</h3>
-        <p>আপনার বাইকের সৌন্দর্য ও body-এর প্রয়োজনীয় কাজ।</p>
-        <ul>
-          <li>Painting</li>
-          <li>Sticker Design</li>
-          <li>Plastic Body Repair</li>
-          <li>Polishing</li>
-          <li>Outlook Detailing</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= PROCESS / HOW WE WORK (new) — motorcycle images showcase ================= -->
-<section id="process" class="section process-section">
-  <div class="container">
-    <div class="section-heading">
-      <span>OUR PROCESS</span>
-      <h2>How We <em>Work</em></h2>
-      <p>দ্রুত, পরিষ্কার ও বিশ্বাসযোগ্য সার্ভিস — আমাদের কাজের ধাপগুলো:</p>
-    </div>
-
-    <!-- Showcase above process (motorcycle images hotlinked) -->
-    <div class="showcase showcase-inline" id="showcase-process" aria-label="Process showcase">
-      <div class="carousel" data-autoplay="true" data-interval="3800">
-        <button class="carousel-control prev" aria-label="Previous">‹</button>
-        <div class="carousel-track">
-          <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?motorcycle&sig=21')"></div>
-          <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?bike,mechanic&sig=22')"></div>
-          <div class="slide" data-type="image" style="background-image:url('https://images.pexels.com/photos/204374/pexels-photo-204374.jpeg?auto=compress&cs=tinysrgb&h=800&w=1400')"></div>
-          <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?motorbike,repair&sig=23')"></div>
-          <div class="slide" data-type="image" style="background-image:url('https://images.pexels.com/photos/163583/bike-motorcycle-vintage-bike-163583.jpeg?auto=compress&cs=tinysrgb&h=800&w=1400')"></div>
-          <div class="slide" data-type="image" style="background-image:url('https://source.unsplash.com/1400x800/?motorcycle,detail&sig=24')"></div>
-        </div>
-        <button class="carousel-control next" aria-label="Next">›</button>
-        <div class="carousel-indicators" role="tablist"></div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+8801911200577">+8801911200577</a>
+        <a href="https://wa.me/8801911200577" target="_blank">WhatsApp</a>
       </div>
     </div>
-
-    <div class="process-steps" style="margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
-      <div class="cta-box">
-        <div>
-          <h3>01. বুকিং</h3>
-          <p>কল/ওয়াটসঅ্যাপে সরাসরি অ্যাপয়েন্টমেন্ট নিন।</p>
-        </div>
-        <div><a class="btn primary-btn" href="tel:+8801911200577">Call</a></div>
-      </div>
-      <div class="cta-box">
-        <div>
-          <h3>02. চেকআপ</h3>
-          <p>প্রফেশনাল টেকনিশিয়ান সম্পূর্ণ চেকআপ করবেন।</p>
-        </div>
-        <div><a class="btn outline-btn" href="#services">View Services</a></div>
-      </div>
-      <div class="cta-box">
-        <div>
-          <h3>03. ডেলিভারি</h3>
-          <p>কাজ শেষে নিরাপদ হস্তান্তর ও পরামর্শ।</p>
-        </div>
-        <div><a class="btn primary-btn" href="#contact">Contact</a></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- rest of the page (footer remains unchanged) -->
-
-<footer>
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-logo">TSRS <span>MOTORS</span></div>
-      <p>Professional Motorcycle Care & Service.</p>
-    </div>
-
-    <div>
-      <h4>Quick Links</h4>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-    <div>
-      <h4>Services</h4>
-      <a href="#services">Engine Service</a>
-      <a href="#services">Wiring</a>
-      <a href="#services">Brake & Tire</a>
-      <a href="#services">Full Service</a>
-    </div>
-
-    <div>
-      <h4>Contact</h4>
-      <a href="tel:+8801911200577">+880 1911 200577</a>
-      <a href="https://wa.me/8801911200577" target="_blank">WhatsApp</a>
-    </div>
-  </div>
-
-  <div class="copyright">
-    © <span id="year"></span> TSRS Motors. All Rights Reserved.
-  </div>
-</footer>
-
-
-<a href="https://wa.me/8801911200577" target="_blank" class="floating-whatsapp" aria-label="WhatsApp">💬</a>
-
-
-<!-- versioned script to bust cache -->
-<script src="script.js?v=202608141945"></script>
+    <div class="copyright">© <span id="year"></span> TSRS Motors. All Rights Reserved.</div>
+  </footer>
 
 </body>
 </html>
