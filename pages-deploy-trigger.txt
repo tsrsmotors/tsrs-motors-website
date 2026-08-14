@@ -2,4 +2,4 @@ Trigger GitHub Pages redeploy
 
 Requested by user (tsrsmotors) to force Pages rebuild.
 
-Timestamp: 2026-08-14T19:25:00Z
+Timestamp: 2026-08-14T19:58:00Z
