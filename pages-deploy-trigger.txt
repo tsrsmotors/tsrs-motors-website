@@ -1,5 +1,5 @@
 Trigger GitHub Pages redeploy
 
-Deployed by Copilot on user request. If Pages is configured to build from the default branch, this commit will trigger a new deployment.
+Requested by user (tsrsmotors) to force Pages rebuild.
 
-Timestamp: 2026-08-14T19:15:24Z
+Timestamp: 2026-08-14T19:25:00Z
