@@ -298,10 +298,14 @@
       font-size: 20px;
     }
 
-    .service p {
+    .service p,
+    .service ul {
       color: var(--gray);
       font-size: 14px;
     }
+
+    .service ul { margin-top: 8px; }
+    .service li { margin: 6px 0; }
 
     /* ABOUT */
     .about {
@@ -655,59 +659,81 @@
         <div class="services">
 
           <article class="service">
-            <div class="service-icon">⚙️</div>
-            <h3>Engine Service</h3>
-            <p>
-              Engine inspection, maintenance এবং
-              প্রয়োজনীয় repair-এর জন্য professional service।
-            </p>
+            <div class="service-icon">🔧</div>
+            <h3>ইঞ্জিন সম্পর্কিত কাজ</h3>
+            <ul>
+              <li>ইঞ্জিন ওভারহল</li>
+              <li>ক্লাচ প্লেট পরিবর্তন</li>
+              <li>পিস্টন ও রিং পরিবর্তন</li>
+              <li>ভালভ অ্যাডজাস্টমেন্ট</li>
+              <li>ইঞ্জিন অয়েল পরিবর্তন</li>
+              <li>টাইমিং চেইন পরিবর্তন</li>
+            </ul>
           </article>
 
           <article class="service">
             <div class="service-icon">⚡</div>
-            <h3>Wiring & Electrical</h3>
-            <p>
-              Bike wiring, electrical connection,
-              lighting এবং electrical troubleshooting।
-            </p>
-          </article>
-
-          <article class="service">
-            <div class="service-icon">🔧</div>
-            <h3>General Servicing</h3>
-            <p>
-              নিয়মিত maintenance, inspection এবং
-              প্রয়োজনীয় servicing।
-            </p>
+            <h3>ইলেকট্রিক্যাল ও ওয়্যারিং কাজ</h3>
+            <ul>
+              <li>সম্পূর্ণ ওয়্যারিং চেক</li>
+              <li>ব্যাটারি পরীক্ষা ও পরিবর্তন</li>
+              <li>হেডলাইট, ইন্ডিকেটর ও হর্ন রিপেয়ার</li>
+              <li>FI (Fuel Injection) ডায়াগনোসিস</li>
+              <li>ECU স্ক্যানিং</li>
+            </ul>
           </article>
 
           <article class="service">
             <div class="service-icon">🛞</div>
-            <h3>Brake & Tire Care</h3>
-            <p>
-              Brake ও tire inspection এবং নিরাপদ
-              riding-এর জন্য প্রয়োজনীয় maintenance।
-            </p>
+            <h3>ব্রেক ও চাকার কাজ</h3>
+            <ul>
+              <li>ব্রেক প্যাড পরিবর্তন</li>
+              <li>ডিস্ক ও ড্রাম সার্ভিস</li>
+              <li>ব্রেক ফ্লুইড পরিবর্তন</li>
+              <li>টায়ার পরিবর্তন</li>
+              <li>টিউবলেস পাংচার রিপেয়ার</li>
+              <li>চাকা অ্যালাইনমেন্ট</li>
+            </ul>
           </article>
 
           <article class="service">
-            <div class="service-icon">🏍️</div>
-            <h3>Bike Maintenance</h3>
-            <p>
-              আপনার বাইককে ভালো condition-এ রাখতে
-              নিয়মিত maintenance service।
-            </p>
+            <div class="service-icon">⚙️</div>
+            <h3>সাসপেনশন ও চেইন কাজ</h3>
+            <ul>
+              <li>শক অ্যাবজর্বার সার্ভিস</li>
+              <li>চেইন টাইট ও লুব্রিকেশন</li>
+              <li>স্প্রকেট পরিবর্তন</li>
+            </ul>
           </article>
 
           <article class="service">
-            <div class="service-icon">🔍</div>
-            <h3>Problem Diagnosis</h3>
-            <p>
-              বাইকের সমস্যা শনাক্ত করে প্রয়োজনীয়
-              সমাধানের পরামর্শ ও service।
-            </p>
+            <div class="service-icon">🧼</div>
+            <h3>জেনারেল সার্ভিসিং</h3>
+            <ul>
+              <li>ফুল বডি ওয়াশ</li>
+              <li>ইঞ্জিন টিউনিং</li>
+              <li>এয়ার ফিল্টার পরিষ্কার/পরিবর্তন</li>
+              <li>স্পার্ক প্লাগ পরিবর্তন</li>
+              <li>সম্পূর্ণ বাইক চেকআপ</li>
+            </ul>
           </article>
 
+          <article class="service">
+            <div class="service-icon">🎨</div>
+            <h3>আউটলুক ও বডি কাজ</h3>
+            <ul>
+              <li>পেইন্টিং</li>
+              <li>স্টিকার ডিজাইন</li>
+              <li>প্লাস্টিক বডি রিপেয়ার</li>
+              <li>পলিশিং</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div style="margin-top:20px;text-align:center;color:var(--gray);">
+          <p style="margin-bottom:8px;">“আপনার বাইকের ইঞ্জিন, ওয়্যারিং, ব্রেক, টায়ার, FI, সাসপেনশন ও সম্পূর্ণ সার্ভিসিং-এর নির্ভরযোগ্য ঠিকানা – TSRS Motors। নিজের বাইকের মতো যত্নে প্রতিটি কাজ করি আমরা।”</p>
+          <p>🔧 Engine | ⚡ Wiring | 🛞 Brake & Tire | ⚙️ Suspension | 🧼 Full Service | 🎨 Outlook Work — সবকিছুর জন্য TSRS Motors।</p>
         </div>
 
       </div>
@@ -758,7 +784,6 @@
       </div>
 
     </section>
-
 
     <!-- PROCESS -->
     <section style="background:#0c0c0c;">
@@ -838,11 +863,11 @@
           <div class="contact-card">
             <h3>📞 Phone</h3>
 
-            <!-- নিজের ফোন নম্বর এখানে বসান -->
-            <p>+880 1XXXXXXXXX</p>
+            <!-- ফোন নম্বর -->
+            <p>+880 1911 200577</p>
 
             <a
-              href="tel:+8801XXXXXXXXX"
+              href="tel:+8801911200577"
               class="btn btn-red">
               Call Now
             </a>
@@ -852,11 +877,11 @@
           <div class="contact-card">
             <h3>💬 WhatsApp</h3>
 
-            <!-- নিজের WhatsApp নম্বর এখানে বসান -->
-            <p>WhatsApp-এ সরাসরি যোগাযোগ করুন।</p>
+            <!-- WhatsApp নম্বর -->
+            <p>WhatsApp: +880 1911 200577</p>
 
             <a
-              href="https://wa.me/8801XXXXXXXXX"
+              href="https://wa.me/8801911200577"
               target="_blank"
               class="btn btn-red">
               WhatsApp
@@ -945,7 +970,7 @@
   <!-- FLOATING WHATSAPP -->
   <a
     class="whatsapp"
-    href="https://wa.me/8801XXXXXXXXX"
+    href="https://wa.me/8801911200577"
     target="_blank"
     aria-label="WhatsApp">
     💬
@@ -956,15 +981,17 @@
   <script>
 
     function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
+      const menu = document.getElementById("menu");
+      if (menu) menu.classList.toggle("active");
     }
 
     function closeMenu() {
-      document.getElementById("menu").classList.remove("active");
+      const menu = document.getElementById("menu");
+      if (menu) menu.classList.remove("active");
     }
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   </script>
 
