@@ -1,25 +1,98 @@
-/* Carousel / Showcase CSS (appended) */
-
-.showcase{padding:28px 0}
-.carousel{position:relative;overflow:hidden;border-radius:14px}
-.carousel .carousel-track{display:flex;transition:transform .6s ease;will-change:transform}
-.carousel .slide{min-width:100%;height:360px;background-size:cover;background-position:center;flex-shrink:0;position:relative}
-.carousel .slide video{width:100%;height:100%;object-fit:cover;display:block}
-.carousel .carousel-control{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:rgba(0,0,0,.45);border:0;color:#fff;width:44px;height:44px;border-radius:8px;font-size:28px;cursor:pointer}
-.carousel .carousel-control.prev{left:10px}
-.carousel .carousel-control.next{right:10px}
-.carousel .carousel-indicators{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);display:flex;gap:8px;z-index:6}
-.carousel .carousel-indicators button{width:10px;height:10px;border-radius:50%;border:0;background:rgba(255,255,255,.35);cursor:pointer}
-.carousel .carousel-indicators button.active{background:var(--orange)}
-
-/* smaller showcase for process */
-.showcase-inline .slide{height:220px}
-
+/* style.css — TSRS Motors professional theme
+   Palette: --red #FF1E1E, --orange #FF8500, --yellow #FFD000, --black #050505, --white #FFFFFF
+*/
+:root{
+  --red:#FF1E1E;
+  --orange:#FF8500;
+  --yellow:#FFD000;
+  --black:#050505;
+  --white:#FFFFFF;
+  --muted:#bdbdbd;
+  --container:1180px;
+  --radius:14px;
+  --transition:all .28s cubic-bezier(.2,.9,.3,1);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, Poppins, 'Noto Sans Bengali',sans-serif;background:var(--black);color:var(--white);-webkit-font-smoothing:antialiased}
+.container{width:min(calc(100% - 40px),var(--container));margin:0 auto}
+a{color:inherit}
+/* NAV */
+.navbar{position:fixed;top:0;left:0;width:100%;z-index:60;background:linear-gradient(180deg,rgba(5,5,5,.85),rgba(5,5,5,.75));backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.03)}
+.nav-container{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800}
+.logo-img{width:44px;height:44px}
+.nav-menu{display:flex;align-items:center;gap:20px}
+.nav-menu a{font-weight:700;font-size:15px;color:var(--muted);padding:8px}
+.nav-menu a:hover{color:var(--orange)}
+.nav-btn{padding:10px 18px;border-radius:28px;background:linear-gradient(90deg,var(--red),var(--orange));color:var(--white);box-shadow:0 8px 30px rgba(255,60,30,.12)}
+.menu-toggle{display:none;background:transparent;border:0;color:var(--white);font-size:26px}
+/* HERO */
+.hero{padding-top:110px;padding-bottom:48px}
+.hero-inner{display:grid;grid-template-columns:1fr 520px;gap:36px;align-items:center}
+.brand{color:var(--muted);font-weight:700;letter-spacing:2px}
+.hero h1{font-size:clamp(28px,6vw,56px);margin:12px 0;line-height:1.02}
+.hero h1 span{background:linear-gradient(90deg,var(--red),var(--orange));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{color:var(--muted);max-width:640px}
+.hero-ctas{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;border:0;cursor:pointer;text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--red),var(--orange));color:var(--white);font-weight:800}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,.06);color:var(--white)}
+.btn.whatsapp{background:linear-gradient(90deg,#00b894,#00d084);color:#fff}
+.hero-media img{width:100%;border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.6)}
+/* SERVICES */
+.section{padding:72px 0}
+.section-heading{display:block;text-align:center;margin-bottom:36px}
+.section-heading h2{font-size:28px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,.03);transition:var(--transition);display:flex;gap:14px;align-items:flex-start}
+.service-card img{width:56px;height:56px}
+.service-card h3{margin:0 0 6px;font-size:18px}
+.service-card p{margin:0;color:var(--muted);font-size:14px}
+.service-card:hover{transform:translateY(-8px);box-shadow:0 30px 80px rgba(0,0,0,.6);border-color:rgba(255,100,50,.12)}
+/* GALLERY */
+.gallery-filters{display:flex;gap:8px;justify-content:center;margin-bottom:18px}
+.gallery-filters button{background:transparent;border:1px solid rgba(255,255,255,.05);padding:8px 12px;border-radius:8px;color:var(--muted);cursor:pointer}
+.gallery-filters button.active{background:linear-gradient(90deg,var(--red),var(--orange));color:#fff;border-color:transparent}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery-item{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border-radius:10px;border:1px solid rgba(255,255,255,.03);overflow:hidden;padding:8px}
+.gallery-item img{width:100%;height:200px;object-fit:cover;display:block;border-radius:8px}
+/* Lightbox */
+.lightbox{position:fixed;left:0;top:0;width:100%;height:100%;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.85);z-index:9999}
+.lightbox.open{display:flex}
+.lightbox img{max-width:94%;max-height:86%}
+.lightbox-close{position:absolute;top:20px;right:20px;background:transparent;border:0;color:#fff;font-size:34px}
+/* PROCESS */
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,.03);display:flex;gap:12px;align-items:flex-start}
+.step-index{font-weight:900;background:linear-gradient(90deg,var(--red),var(--orange));padding:8px 12px;border-radius:8px}
+.step-body h3{margin:0}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px}
+.contact-card,.booking-card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,.03)}
+.booking-card form label{display:block;margin-bottom:10px}
+.booking-card input,.booking-card select,.booking-card textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.04);background:transparent;color:var(--white)}
+.form-actions{margin-top:12px}
+/* FOOTER */
+footer{padding:28px 0;border-top:1px solid rgba(255,255,255,.02);background:linear-gradient(180deg,#060606,#040404)}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.logo-img-sm{width:110px}
+/* RESPONSIVE */
 @media(max-width:980px){
-  .carousel .slide{height:260px}
-  .showcase-inline .slide{height:180px}
+  .hero-inner{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .timeline{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .carousel .slide{height:200px}
-  .showcase-inline .slide{height:140px}
+  .menu-toggle{display:block}
+  .nav-menu{display:none;position:fixed;inset:76px 0 0 0;background:linear-gradient(180deg,#0a0a0a,#050505);flex-direction:column;padding:20px;gap:12px}
+  .nav-menu.open{display:flex}
+  .services-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr}
+  .hero h1{font-size:28px}
 }
