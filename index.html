@@ -20,7 +20,7 @@
 
   <!-- versioned stylesheet to bust cache -->
   <link rel="stylesheet"
-        href="style.css?v=202608141920">
+        href="style.css?v=202608141930">
 </head>
 
 <body>
@@ -122,7 +122,32 @@
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- ================= SHOWCASE (above Services) ================= -->
+<section class="showcase" id="showcase-services" aria-label="Bike showcase banner">
+  <div class="container">
+    <div class="carousel" data-autoplay="true" data-interval="4500">
+      <button class="carousel-control prev" aria-label="Previous">‹</button>
+      <div class="carousel-track">
+        <!-- Slide 1: image -->
+        <div class="slide" data-type="image" style="background-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80')" aria-hidden="false"></div>
+        <!-- Slide 2: image -->
+        <div class="slide" data-type="image" style="background-image:url('https://images.unsplash.com/photo-1511910849309-0e0d9f8b2f4f?auto=format&fit=crop&w=1400&q=80')" aria-hidden="true"></div>
+        <!-- Slide 3: video (muted loop) -->
+        <div class="slide" data-type="video" aria-hidden="true">
+          <video muted playsinline preload="metadata" loop>
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <button class="carousel-control next" aria-label="Next">›</button>
+      <div class="carousel-indicators" role="tablist"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SERVICES (existing) ================= -->
 
 <section class="section services-section" id="services">
 
@@ -236,7 +261,58 @@
 </section>
 
 
-<!-- rest of the page unchanged... -->
+<!-- ================= PROCESS / HOW WE WORK (new) ================= -->
+<section id="process" class="section process-section">
+  <div class="container">
+    <div class="section-heading">
+      <span>OUR PROCESS</span>
+      <h2>How We <em>Work</em></h2>
+      <p>দ্রুত, পরিষ্কার ও বিশ্বাসযোগ্য সার্ভিস — আমাদের কাজের ধাপগুলো:</p>
+    </div>
+
+    <!-- Showcase above process -->
+    <div class="showcase showcase-inline" id="showcase-process" aria-label="Process showcase">
+      <div class="carousel" data-autoplay="true" data-interval="3800">
+        <button class="carousel-control prev" aria-label="Previous">‹</button>
+        <div class="carousel-track">
+          <div class="slide" data-type="image" style="background-image:url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80')"></div>
+          <div class="slide" data-type="image" style="background-image:url('https://images.unsplash.com/photo-1529429610031-4b0c1f4c1f3d?auto=format&fit=crop&w=1400&q=80')"></div>
+          <div class="slide" data-type="image" style="background-image:url('https://images.unsplash.com/photo-1502877828079-9b2f1d89fefc?auto=format&fit=crop&w=1400&q=80')"></div>
+        </div>
+        <button class="carousel-control next" aria-label="Next">›</button>
+        <div class="carousel-indicators" role="tablist"></div>
+      </div>
+    </div>
+
+    <div class="process-steps" style="margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+      <div class="cta-box">
+        <div>
+          <h3>01. বুকিং</h3>
+          <p>কল/ওয়াটসঅ্যাপে সরাসরি অ্যাপয়েন্টমেন্ট নিন।</p>
+        </div>
+        <div><a class="btn primary-btn" href="tel:+8801911200577">Call</a></div>
+      </div>
+      <div class="cta-box">
+        <div>
+          <h3>02. চেকআপ</h3>
+          <p>প্রফেশনাল টেকনিশিয়ান সম্পূর্ণ চেকআপ করবেন।</p>
+        </div>
+        <div><a class="btn outline-btn" href="#services">View Services</a></div>
+      </div>
+      <div class="cta-box">
+        <div>
+          <h3>03. ডেলিভারি</h3>
+          <p>কাজ শেষে নিরাপদ হস্তান্তর ও পরামর্শ।</p>
+        </div>
+        <div><a class="btn primary-btn" href="#contact">Contact</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- rest of the page (footer remains unchanged) -->
 
 <footer>
   <div class="container footer-grid">
@@ -278,7 +354,7 @@
 
 
 <!-- versioned script to bust cache -->
-<script src="script.js?v=202608141920"></script>
+<script src="script.js?v=202608141930"></script>
 
 </body>
 </html>
